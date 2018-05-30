@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Margarita Kozyreva](https://up.htmlacademy.ru/htmlcss/21/user/460679).
-* Наставник: [Александр Кошара](https://up.htmlacademy.ru/htmlcss/21/user/169035).
+* Наставник: `Неизвестно`.
 
 ---
 
