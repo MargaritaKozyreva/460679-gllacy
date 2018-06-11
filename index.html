@@ -39,15 +39,27 @@
       <div class="user-navigation">
         <a href="#">Поиск</a>
         <div class="search-form">
-          <!--тут будет форма поиска-->
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <label for="search-form-item" class="visually-hidden">Поиск по сайту</label>
+            <input type="search" name="search" id="search-form-item" placeholder="Что ищем?">
+          </form>
         </div>
         <a href="#">Вход</a>
         <div class="login-form">
-          <!--тут будет форма входа-->
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="login-form-item">
+              <label for="login-form-email" class="visually-hidden">Электронная почта</label>
+              <input type="email" name="email" id="login-form-email" placeholder="Электронная почта">
+            </p>
+            <p class="login-form-item">
+              <label for="login-form-password" class="visually-hidden">Пароль</label>
+              <input type="password" name="password" id="login-form-password" placeholder="Пароль">
+            </p>
+            <button class="button" type="submit">Войти</button>
+          </form>
           <a class="login-link" href="#">Забыли пароль?</a>
           <br>
           <a class="login-link" href="#">Новая регистрация</a>
-          <button class="button">Войти</button>
         </div>
         <a href="#">Пусто</a>
       </div>
@@ -62,7 +74,7 @@
   <main class="container">
     <h1 class="visually-hidden">Интернет-магазин мороженного «Gllacy Shop»</h1>
     <div class="slide-container">
-      <img src="img/product-images/big_product-item.png">
+      <img src="img/product-images/big_product-item.png" alt="slider1">
     </div>
     <section class="advantage-block">
       <h2>Малинка даром!</h2>
@@ -84,6 +96,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item2.png" width="267" height="267" alt="product-item2" class="product-item-img">
@@ -92,6 +105,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочно-кофейное с кусочками шоколада</a>
+          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item3.png" width="267" height="267" alt="product-item3" class="product-item-img">
@@ -100,6 +114,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item4.png" width="267" height="267" alt="product-item4" class="product-item-img">
@@ -108,10 +123,11 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочное крем-брюле с карамельной подливкой</a>
+          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
         </li>
       </ul>
     </div>
-    <section class="gllacy-rewiev">
+    <section class="gllacy-rewiev" aria-label="Подробнее о нашем магазине">
       <h4>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес.</h4>
       <ul class="gllacy-rewiev-list">
         <li class="gllacy-rewiev-item">
@@ -132,39 +148,44 @@
         </li>
       </ul>
     </section>
-    <section class="gllacy-blog-news">
+    <section class="gllacy-blog-news" aria-label="Новое в нашем блоге">
       <p>Новое в нашем блоге</p>
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </section>
     <section class="subscription">
+      <h2 class="visually-hidden">Подписка на рассылку</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
         спамить и не слать всякой не нужной ерунды. Честно =)</p>
-      <!--Тут будет форма-->
-      <input class="btn" type="submit" value="Отправить">
+      <div class="subscription-form">
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <label for="subscription-form-item" class="visually-hidden">Поиск по сайту</label>
+          <input type="email" name="subscription" id="subscription-form-item" placeholder="Электронная почта">
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
     <div class="map" aria-label="Адрес магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124086!2d30.320894616180684!3d59.93879686904775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1528484610747"
-        width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <!--Тут будет карта-->
-      <section class="contacts">
+        width="1200" height="450" frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
+      <section class="contacts" aria-label="Контактная информация">
         <p>Адрес главного офиса и офлайн магазина:</p>
         <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
         <p>Адрес главного офиса и офлайн магазина:</p>
         <a href="tel:88124502525">8 812 450-25-25</a>
         <p>(с 10 до 20 ежедневно)</p>
         <a class="button" href="contacts.html">Форма обратной связи</a>
-        <!--Тут будет форма обратной связи-->
       </section>
     </div>
   </main>
   <footer class="main-footer">
-    <div class="footer-social">
+    <div class="footer-social" aria-label="Мы в социальных сетях">
       <a class="social-button btn-twitter" href="#">Твиттер</a>
       <a class="social-button btn-instagram" href="#">Инстаграм</a>
       <a class="social-button btn-facebook" href="#">Фейсбук</a>
       <a class="social-button btn-vk" href="#">Вконтакте</a>
     </div>
-    <div class="footer-info">
+    <div class="footer-info" aria-label="Дополнительная информация">
       <a href="#">Для поставщиков</a>
       <a href="#">О производстве</a>
       <a href="#">Наши документы</a>
@@ -177,11 +198,25 @@
       <span>&copy; 2018</span>
     </div>
   </footer>
-  <section class="modal modal-feedback">
+  <section class="modal modal-feedback" aria-label="Обратная связь">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <button class="modal-close">x</button>
-    <span>Мы обязательно вам ответим!</span>
-    <!--Тут будет форма обратной связи-->
+    <h3>Мы обязательно вам ответим!</h3>
+    <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?" required="">
+        <label for="feedback-name" class="visually-hidden">Как вас зовут?</label>
+      </p>
+      <p>
+        <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?" required="">
+        <label for="email" class="visually-hidden">Ваша почта для ответа?</label>
+      </p>
+      <p>
+        <textarea name="feedback-text" id="feedback-text" placeholder="Напишите что-нибудь..." required=""></textarea>
+        <label for="feedback-text" class="visually-hidden">Напишите что-нибудь...</label>
+      </p>
+      <button type="submit" class="button">Отправить</button>
+    </form>
   </section>
 </body>
 
