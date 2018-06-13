@@ -58,7 +58,6 @@
             <button class="button" type="submit">Войти</button>
           </form>
           <a class="login-link" href="#">Забыли пароль?</a>
-          <br>
           <a class="login-link" href="#">Новая регистрация</a>
         </div>
         <a href="#">2 товара</a>
@@ -114,28 +113,23 @@
         <fieldset class="product-category">
           <legend>Сортировка:</legend>
           <div class="product-filter-item">
-            <p>
               <select multiple size="1">
                 <option>По популярности</option>
                 <option>Сначала недорогие</option>
                 <option>Сначала дорогие</option>
                 <option>По жирности</option>
               </select>
-            </p>
           </div>
         </fieldset>
         <fieldset class="product-category">
           <legend>Цена: 100 руб. — 500 руб.</legend>
           <div class="product-filter-item">
-            <p>
-              <input type="range" min="0" max="500">
-            </p>
+            <!--здесь будет бегунок-->
           </div>
         </fieldset>
         <fieldset class="product-category">
           <legend>Жирность</legend>
-          <div class="product-filter-item">
-            <ul>
+            <ul class="product-filter-item">
               <li class="filter-option">
                 <input class="filter-input filter-input-radio" type="radio" name="f-fat-content" id="f-slim">
                 <label for="f-slim">0%</label>
@@ -153,12 +147,10 @@
                 <label for="f-upper-middle">выше 30%</label>
               </li>
             </ul>
-          </div>
         </fieldset>
         <fieldset class="product-category">
           <legend>Наполнители</legend>
-          <div class="product-filter-item">
-            <ul>
+            <ul class="product-filter-item">
               <li class="filter-option">
                 <input class="filter-input filter-input-checkbox" type="checkbox" name="f-filler-content" id="f-choco" checked>
                 <label for="f-choco">шоколадные</label>
@@ -180,7 +172,6 @@
                 <label for="f-jams">джемы</label>
               </li>
             </ul>
-          </div>
         </fieldset>
         <button class="filter-button button" type="submit">Применить</button>
       </form>
@@ -195,7 +186,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item2.png" width="267" height="267" alt="product-item2" class="product-item-img">
@@ -204,7 +195,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочно-кофейное с кусочками шоколада</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item3.png" width="267" height="267" alt="product-item3" class="product-item-img">
@@ -213,7 +204,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item4.png" width="267" height="267" alt="product-item4" class="product-item-img">
@@ -222,7 +213,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочное крем-брюле с карамельной подливкой</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item5.png" width="267" height="267" alt="product-item5" class="product-item-img">
@@ -231,7 +222,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочное с брусничным джемом</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item6.png" width="267" height="267" alt="product-item6" class="product-item-img">
@@ -240,7 +231,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочно-черничное с цельными ягодами черники</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item7.png" width="267" height="267" alt="product-item7" class="product-item-img">
@@ -249,7 +240,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочно-лимонное с карамельной присыпкой</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item8.png" width="267" height="267" alt="product-item8" class="product-item-img">
@@ -258,7 +249,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочное с шоколадной стружкой</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item9.png" width="267" height="267" alt="product-item9" class="product-item-img">
@@ -267,7 +258,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочно-ванильное с кусочками шоколада</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item10.png" width="267" height="267" alt="product-item10" class="product-item-img">
@@ -276,7 +267,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочное с ментоловым сиропом</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item11.png" width="267" height="267" alt="product-item11" class="product-item-img">
@@ -285,7 +276,7 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочное с кусочками чёрного шоколада</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <img src="img/product-images/product-item12.png" width="267" height="267" alt="product-item12" class="product-item-img">
@@ -294,12 +285,12 @@
             <span class="product-item-price-small">кг</span>
           </p>
           <a href="#" class="product-item-desc">Сливочное с мятным сиропом</a>
-          <button class="product-item-desc-fast visually-hidden">Быстрый просмотр</button>
+          <a href="#" class="product-item-desc-fast visually-hidden">Быстрый просмотр</a>
         </li>
       </ul>
       <div class="product-pages-pagination">
         <h2 class="visually-hidden">Навигация по товарам</h2>
-        <button class="pagination-btn btn-next" type="button">Вперед</button>
+        <a href = "#" class="pagination-btn btn-next">Вперед</a>
         <ul class="product-pages-pagination-list">
           <li class="product-item product-item-current">1</li>
           <li class="product-item">
@@ -315,7 +306,7 @@
             <a href="#">5</a>
           </li>
         </ul>
-        <button class="pagination-btn btn-back" type="button">Назад</button>
+        <a href = "#" class="pagination-btn btn-back">Назад</a>
       </div>
     </div>
   </main>
@@ -339,7 +330,7 @@
       <span>&copy; 2018</span>
     </div>
   </footer>
-  <section class="modal modal-feedback" aria-label="Обратная связь">
+  <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <h3>Мы обязательно вам ответим!</h3>
     <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
