@@ -9,7 +9,7 @@ body {
   background-color: #849d8f;
 }
 
-a {
+.link {
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
@@ -18,7 +18,7 @@ a {
   text-decoration-color: #a1b5aa;
 }
 
-ul {
+.list {
   list-style: none;
 }
 
@@ -196,7 +196,7 @@ a:active {
   font-weight: 700;
 }
 
-p.work-time-info {
+.work-time-info p{
   font-weight: 700;
 }
 
@@ -246,7 +246,7 @@ p.work-time-info {
   line-height: 45px;
 }
 
-section.gllacy-rewiev {
+.gllacy-rewiev section {
   background: #ebdfc6 url(../img/fon/block-4.jpg);
 }
 
@@ -267,7 +267,7 @@ section.gllacy-rewiev {
   text-align: left;
 }
 
-section.gllacy-blog-news {
+.gllacy-blog-news section{
   background: #fff url(../img/fon/block-3.jpg);
   ;
 }
